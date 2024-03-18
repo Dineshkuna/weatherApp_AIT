@@ -69,7 +69,7 @@ setInterval(() => {
 function getPublicIp() {
     fetch("https://geolocation-db.com/json/", {
       method: "GET",
-      headers: {},
+      
     })
       .then((response) => response.json())
       .then((data) => {
@@ -91,7 +91,7 @@ function getWeatherData(city, unit, hourlyorWeek) {
         `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?unitGroup=metric&key=EJ6UBL2JEQGYB3AA4ENASN62J&contentType=json`,
         {
             method: "GET",
-            headers: {},
+            
         }    
     
 )
